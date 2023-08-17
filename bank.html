@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 class="text-5xl text-center mt-8">
+          Lets get some <span class="text-orange-300">Money!!</span>
+        </h1>
+      </header>
+      <main>
+        <!-- Deposit, withdraw and Balance amount  -->
+        <section>
+          <div class="flex gap-[30px] items-center ml-[550px] mt-[60px]">
+            <div
+              class="h-[150px] w-[270px] bg-orange-400 rounded-lg pl-[20px] pt-[40px] text-white"
+            >
+              <span class="text-3xl">Deposit </span> <br />
+              <span class="text-5xl">$<span id="deposit-total">00</span></span>
+            </div>
+            <div
+              class="h-[150px] w-[270px] bg-green-500 rounded-lg pl-[20px] pt-[40px] text-white"
+            >
+              <span class="text-3xl">Withdraw </span> <br />
+              <span class="text-5xl">$<span id="withdraw-input">00</span></span>
+            </div>
+            <div
+              class="h-[150px] w-[270px] bg-yellow-500 rounded-lg pl-[20px] pt-[40px] text-white"
+            >
+              <span class="text-3xl">Balance </span> <br />
+              <span class="text-5xl"
+                >$<span id="balance-total">1240</span></span
+              >
+            </div>
+          </div>
+        </section>
+        <!-- Deposit and withdraw field  -->
+        <section>
+          <div class="flex gap-[50px] mt-[20px] ml-[550px]">
+            <div class="h-[200px] w-[410px] bg-green-600 rounded-lg">
+              <div class="pl-[50px] pt-[20px]">
+                <h2 class="text-3xl text-white">Please Deposit</h2>
+              </div>
+              <div class="pt-[10px] pl-[50px]">
+                <input
+                  class="w-[300px] placeholder-gray-300"
+                  type="text"
+                  name=""
+                  id="deposit-field"
+                  placeholder="$ Amount you want to deposit"
+                />
+              </div>
+              <br />
+              <div class="pt-[0px] pl-[50px]">
+                <button
+                  id="btn-deposit"
+                  class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full"
+                >
+                  Deposit
+                </button>
+              </div>
+            </div>
+
+            <div class="h-[200px] w-[410px] bg-cyan-400 rounded-lg">
+              <div class="pl-[50px] pt-[20px]">
+                <h2 class="text-3xl text-white">Please Withdraw</h2>
+              </div>
+              <div class="pt-[10px] pl-[50px]">
+                <input
+                  class="w-[300px] placeholder-gray-300"
+                  type="text"
+                  name=""
+                  id="withdraw-field"
+                  placeholder="$ Amount you want to Withdraw"
+                />
+              </div>
+              <br />
+              <div class="pt-[0px] pl-[50px]">
+                <button
+                  id="btn-withdraw"
+                  class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+  </body>
+</html>
